@@ -1,7 +1,8 @@
 baguetteBox.run('.gallery');
 
-const picseacrh = document.getElementById('picseacrh');
-picseacrh.addEventListener('keyup', e => {
-    let currentValue= e.target.value.toLowerCase();
-    console.log(currentValue);
+const picsearch = document.getElementsByA('a');
+picsearch.addEventListener('keyup', e => {
+    let currentValue = e.target.value.toLowerCase();
+    let picsearch = document.querySelectorAll('gallery, alt');
+    photo.forEach()
 });
