@@ -1,3 +1,5 @@
+baguetteBox.run('.gallery');
+
 const picseacrh = document.getElementById('picseacrh');
 picseacrh.addEventListener('keyup', e => {
     let currentValue= e.target.value.toLowerCase();
