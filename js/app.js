@@ -1,8 +1,15 @@
 baguetteBox.run('.gallery');
 
-const picsearch = document.getElementsByA('a');
-picsearch.addEventListener('keyup', e => {
-    let currentValue = e.target.value.toLowerCase();
-    let picsearch = document.querySelectorAll('gallery, alt');
-    photo.forEach()
-});
+const searchInput = document.querySelector('[data-search]');
+let captions = document.getElementsByTagName('a');
+
+searchInput.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase();
+
+    for (i = 0; i< captions.length; i++) {
+        if (!captions[i].innerHTML.toLowerCase().includes(value)) {
+            captions[i].style.display="none";
+        } else {
+            captions[i].style.display="";
+        }}
+    })
