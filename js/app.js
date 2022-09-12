@@ -13,4 +13,3 @@ searchInput.addEventListener("input", e => {
             captions[i].style.display="";
         }}
     })
-  
